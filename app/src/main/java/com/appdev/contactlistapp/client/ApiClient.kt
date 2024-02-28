@@ -1,23 +1,17 @@
 package com.appdev.contactlistapp.client
-// implementation of the retrofit get method
+// Creating an instance of retrofit client
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+object ApiClient {
+    private const val BASE_URL = "https://dev.gozayaan.com/api/"
 
-const val BASE_URL = "https://dev.gozayaan.com/api"
-
-class ApiClient {
-
-    private fun getResponse(){
-        val retrofitBuilder = Retrofit.Builder()
-            .addConverterFactory(GsonConverterFactory.create())
+    fun getInstance() : Retrofit {
+        return Retrofit.Builder()
             .baseUrl(BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(ApiInterface::class.java)
-
-        val retrofitData = retrofitBuilder.getData()
     }
-
 
 }
