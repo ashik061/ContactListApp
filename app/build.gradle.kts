@@ -60,6 +60,8 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
 
+    // material design
+    implementation("androidx.compose.material:material:1.6.2") 
 
 
 }

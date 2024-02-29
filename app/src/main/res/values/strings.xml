@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">ContactListApp</string>
+    <string name="phoneNumber">(270) 555-0117</string>
+    <string name="userName">Jhon Cooper</string>
+    <string name="search">Search</string>
+    <string name="contactHeader">My Contact</string>
+    <string name="call">Call</string>
+    <string name="msg">Message</string>
+    <string name="email">luther@gmail.com</string>
+    <string name="mail">Email</string>
+
+
+
 </resources>

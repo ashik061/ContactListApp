@@ -11,3 +11,4 @@ data class ResponseData(
     @SerializedName("status")
     val status: Boolean?
 )
+

@@ -3,6 +3,7 @@ package com.appdev.contactlistapp.view
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.TextView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.appdev.contactlistapp.R
@@ -11,8 +12,6 @@ import com.appdev.contactlistapp.client.ApiService
 import com.appdev.contactlistapp.repository.DataRepository
 import com.appdev.contactlistapp.viewmodel.MainViewModel
 import com.appdev.contactlistapp.viewmodel.MainViewModelFactory
-import retrofit2.create
-import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,6 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         mainViewModel.response.observe(this, Observer {
             Log.d("APIDATA", it.result.toString())
+            findViewById<TextView>(R.id.txtId).text = it.result?.get(0)?.email.toString()
         })
 
     }

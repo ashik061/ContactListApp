@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="backButtonMarginLeft">16.5dp</dimen>
+    <dimen name="backButtonMarginTop">55.5dp</dimen>
+</resources>
