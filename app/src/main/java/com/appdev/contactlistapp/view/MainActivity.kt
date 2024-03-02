@@ -1,5 +1,6 @@
 package com.appdev.contactlistapp.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -53,7 +54,19 @@ class MainActivity : AppCompatActivity(), RecyclerViewAdapter.RecyclerViewEvent 
     // item click operation
     override fun onItemClick(position: Int) {
         val clickedItem = mainViewModel.response.value?.result?.get(position)
-        Toast.makeText(this, clickedItem?.email, Toast.LENGTH_SHORT).show()
+        // Toast.makeText(this, clickedItem?.email, Toast.LENGTH_SHORT).show()
+
+        val intent = Intent(this, ContactDetails::class.java)
+
+        // passing user details to the new activity
+        intent.putExtra("fullName", clickedItem?.fullName)
+        intent.putExtra("email", clickedItem?.email)
+        intent.putExtra("phoneNumber", clickedItem?.phoneNumber)
+        intent.putExtra("image", clickedItem?.image)
+
+
+        startActivity(intent)
 
     }
 }
+
