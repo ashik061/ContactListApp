@@ -32,12 +32,12 @@
         android:background="@drawable/search_field_background"
         android:drawableStart="@drawable/ico_search"
         android:drawablePadding="12dp"
-        android:textColor="@color/phoneNumberColor"
         android:fontFamily="@font/sf_pro_text_regular"
         android:hint="@string/search"
         android:inputType="text"
         android:letterSpacing="-0.026"
         android:padding="8dp"
+        android:textColor="@color/phoneNumberColor"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -46,10 +46,9 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/contactListRecycler"
-        android:layout_width="286dp"
-        android:layout_height="751dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />

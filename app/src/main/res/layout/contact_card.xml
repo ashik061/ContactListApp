@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
 
     <androidx.cardview.widget.CardView
@@ -19,12 +19,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="60dp"
             android:orientation="vertical">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="60dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -89,27 +85,25 @@
                                 android:layout_marginBottom="31dp"
                                 android:fontFamily="@font/roboto_regular"
                                 android:lineSpacingExtra="18sp"
-                                android:text="@string/userName"
+                                android:text="Jhon Cooper"
                                 android:textColor="@color/black"
                                 android:textSize="17sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
                                 android:id="@+id/userPhoneNumber"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="97dp"
+                                android:layout_height="18dp"
                                 android:layout_marginTop="4dp"
                                 android:layout_marginBottom="10dp"
                                 android:fontFamily="@font/roboto_regular"
                                 android:lineSpacingExtra="18sp"
-                                android:text="@string/phoneNumber"
+                                android:text="phoneNumber"
                                 android:textColor="@color/phoneNumberColor"
                                 android:textSize="14sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/userName" />
 
@@ -127,7 +121,6 @@
                     </LinearLayout>
 
                 </LinearLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
 

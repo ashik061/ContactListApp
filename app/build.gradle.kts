@@ -61,7 +61,11 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
 
     // material design
-    implementation("androidx.compose.material:material:1.6.2") 
+    implementation("androidx.compose.material:material:1.6.2")
+
+    // picasso
+    implementation ("com.squareup.picasso:picasso:2.8")
+
 
 
 }
